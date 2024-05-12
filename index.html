@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doação de Comida</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Doação de Comida</h1>
+    </header>
+    <main>
+        <section id="donation-form">
+            <h2>Faça uma Doação</h2>
+            <form id="donation-form">
+                <label for="donator-name">Seu Nome:</label>
+                <input type="text" id="donator-name" required>
+                <label for="food-quantity">Quantidade de Comida (kg):</label>
+                <input type="number" id="food-quantity" required>
+                <label for="food-type">Tipo de Comida:</label>
+                <input type="text" id="food-type" required>
+                <button type="submit">Enviar Doação</button>
+            </form>
+        </section>
+        <section id="donation-table">
+            <h2>Últimas Doações</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Quantidade (kg)</th>
+                        <th>Tipo</th>
+                    </tr>
+                </thead>
+                <tbody id="donation-entries">
+                    <!-- Aqui serão inseridas as doações dinamicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
