@@ -50,5 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (event.target.classList.contains('delete-btn')) {
             event.target.parentNode.parentNode.remove();
         }
+        
     });
 });
